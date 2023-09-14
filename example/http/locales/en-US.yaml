@@ -1,0 +1,8 @@
+HelloPerson:
+    other: Hello {{.Name}}
+MyUnreadEmails:
+    one: I have {{.PluralCount}} unread email.
+    other: I have {{.PluralCount}} unread emails.
+PersonUnreadEmails:
+    one: '{{.Name}} has {{.UnreadEmailCount}} unread email.'
+    other: '{{.Name}} has {{.UnreadEmailCount}} unread emails.'

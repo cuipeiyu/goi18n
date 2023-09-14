@@ -1,0 +1,8 @@
+HelloPerson:
+    other: 你好 {{.Name}}
+MyUnreadEmails:
+    one: 我有 {{.PluralCount}} 条未读邮件。
+    other: 我有 {{.PluralCount}} 条未读邮件。
+PersonUnreadEmails:
+    one: '{{.Name}} 有 {{.UnreadEmailCount}} 未读邮件。'
+    other: '{{.Name}} 有 {{.UnreadEmailCount}} 未读邮件。'
