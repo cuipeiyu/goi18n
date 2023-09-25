@@ -31,12 +31,12 @@ func main() {
 	viper.BindPFlag("default", rootCmd.PersistentFlags().Lookup("default"))
 
 	// outdir
-	rootCmd.Flags().String("outdir", "locales", "输出文件夹 default: locales")
-	viper.BindPFlag("outdir", rootCmd.Flags().Lookup("outdir"))
+	rootCmd.PersistentFlags().String("outdir", "./locales", "输出文件夹 default: $PWD/locales")
+	viper.BindPFlag("outdir", rootCmd.PersistentFlags().Lookup("outdir"))
 
 	// outformat
-	rootCmd.Flags().String("outformat", "yaml", "输出格式 default: yaml")
-	viper.BindPFlag("outformat", rootCmd.Flags().Lookup("outformat"))
+	rootCmd.PersistentFlags().String("outformat", "yaml", "输出格式 default: yaml")
+	viper.BindPFlag("outformat", rootCmd.PersistentFlags().Lookup("outformat"))
 
 	// sub command extract
 	{
